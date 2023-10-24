@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Koleksi Buku</title>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/styles/style.css" />
+
+    <!-- BoxIcons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main>
+      <!-- Hero Start -->
+      <section class="hero section">
+        <div class="hero_container container">
+          <h1 class="hero_title">Koleksi Buku</h1>
+        </div>
+      </section>
+      <!-- Hero End -->
+
+      <!-- Form Input Book Section Start-->
+      <section class="input_book section">
+        <div class="input_book_container container">
+          <div id="btn_form">
+            <button>
+              <i class="bx bxs-plus-square icon_form"></i>
+              Tambah Buku
+            </button>
+          </div>
+          <div id="form_add_book">
+            <h2 class="section_title">Masukkan Buku Baru</h2>
+            <form action="#" id="form_input_buku">
+              <!-- input judul buku -->
+              <div class="form_input_area">
+                <label class="label_text" for="input_judul">Judul Buku</label>
+                <input class="form_input" id="input_judul" type="text" placeholder="Masukkan judul buku disini" required />
+              </div>
+              <!-- input penulis buku -->
+              <div class="form_input_area">
+                <label class="label_text" for="input_penulis">Penulis</label>
+                <input class="form_input" id="input_penulis" type="text" placeholder="Masukkan nama penulis buku disini" required />
+              </div>
+              <!-- input tahun buku -->
+              <div class="form_input_area">
+                <label class="label_text" for="input_tahun">Tahun</label>
+                <input class="form_input" id="input_tahun" type="number" placeholder="Masukkan judul buku disini" required />
+              </div>
+              <div class="checkbox_dibaca_area">
+                <input type="checkbox" id="check_dibaca" />
+                <label for="check_dibaca">Buku selesai dibaca</label>
+              </div>
+              <button class="btn_submit" type="submit">Tambahkan buku baru</button>
+            </form>
+            <button id="btn_cancel">Batal</button>
+          </div>
+        </div>
+      </section>
+      <!-- Form Input Book Section End-->
+
+      <!-- Search Book Section Start -->
+      <section class="search section">
+        <div class="search_container container">
+          <h2 class="section_title">Cari Judul Buku</h2>
+          <div class="search_area">
+            <input id="search_input" type="text" placeholder="Masukkan judul buku disini" />
+            <i id="btn_search" class="bx bx-search"></i>
+          </div>
+        </div>
+      </section>
+      <!-- Search Book Section End -->
+
+      <!-- Buku Belum Dibaca Section Start -->
+      <section class="belum_dibaca section">
+        <div class="belum_dibaca_container container">
+          <h2 class="section_title">Buku Belum Dibaca</h2>
+          <div id="buku_belum_dibaca" class="daftar_buku_container"></div>
+        </div>
+      </section>
+      <!-- Buku Belum Dibaca Section End -->
+
+      <!-- Buku Sudah Dibaca Section Start -->
+      <section class="sudah_dibaca section">
+        <div class="sudah_dibaca_container container">
+          <h2 class="section_title">Buku Sudah Dibaca</h2>
+          <div id="buku_sudah_dibaca" class="daftar_buku_container"></div>
+        </div>
+      </section>
+      <!-- Buku Sudah Dibaca Section End -->
+    </main>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

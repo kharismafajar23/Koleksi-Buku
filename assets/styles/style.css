@@ -1,0 +1,262 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap');
+
+:root {
+  /* color */
+  --body-color: rgba(231, 233, 248, 1);
+  --main-black-color: rgba(51, 51, 51, 1);
+  --purple-color: rgba(126, 110, 225, 1);
+  --stroke-color: rgba(205, 221, 226, 1);
+
+  /* Font */
+  --main-font: 'Plus Jakarta Sans', sans-serif;
+
+  /* Font Weight */
+  --light-font: 300;
+  --regular-font: 400;
+  --medium-font: 500;
+  --semi-bold-font: 600;
+}
+
+/* Scroll Bar */
+::-webkit-scrollbar {
+  width: 0.6rem;
+  border-radius: 0.5rem;
+  background-color: hsl(228, 8%, 76%);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: hsl(228, 8%, 64%);
+  border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: hsl(228, 8%, 54%);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--body-color);
+}
+
+body,
+button,
+input,
+textarea {
+  font-family: var(--main-font);
+  color: var(--main-black-color);
+}
+
+label {
+  font-size: 14px;
+  font-weight: var(--medium-font);
+}
+
+.label_text {
+  position: absolute;
+  top: -14px;
+  left: 12px;
+  background-color: white;
+  padding: 4px;
+}
+
+input[type='text'],
+input[type='number'] {
+  padding: 15px 17px;
+  border-radius: 4px;
+  border: none;
+  outline: 1px solid var(--stroke-color);
+}
+
+input:focus {
+  outline: 1px solid var(--purple-color);
+}
+
+button {
+  cursor: pointer;
+}
+
+.section {
+  padding: 14px 0;
+}
+
+.container {
+  max-width: 584px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 12px;
+  padding: 37px 47px;
+}
+
+.section_title {
+  font-size: 1.75rem;
+  font-weight: var(--semi-bold-font);
+  margin-bottom: 20px;
+}
+
+.hero_container {
+  padding: 45px 0;
+  background-color: var(--purple-color);
+}
+
+.hero_title {
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+}
+
+#btn_form button {
+  border: none;
+  padding: 8px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: white;
+  background-color: var(--purple-color);
+}
+
+.icon_form {
+  font-size: 1.3rem;
+}
+
+#form_add_book {
+  display: none;
+}
+
+.form_input_area {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.form_input_area:not(:last-of-type) {
+  margin-top: 24px;
+}
+
+.checkbox_dibaca_area {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 12px;
+  gap: 8px;
+}
+
+.btn_submit {
+  color: white;
+  font-weight: var(--semi-bold-font);
+  padding: 13px 0;
+  background-color: var(--purple-color);
+  width: 100%;
+  border-radius: 4px;
+  border: none;
+  margin-top: 20px;
+}
+
+.btn_submit:hover {
+  background-color: rgb(84, 70, 173);
+}
+
+#btn_cancel {
+  color: var(--purple-color);
+  font-weight: var(--semi-bold-font);
+  padding: 13px 0;
+  background-color: white;
+  width: 100%;
+  border-radius: 4px;
+  border: none;
+  margin-top: 8px;
+}
+
+#btn_cancel:hover {
+  background-color: rgb(227, 227, 227);
+}
+
+.search_area {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid var(--stroke-color);
+  border-radius: 4px;
+  padding-right: 7px;
+}
+
+#search_input {
+  border: none;
+  outline: none;
+  width: 80%;
+}
+
+#btn_search {
+  padding: 8px;
+  color: white;
+  cursor: pointer;
+  background-color: var(--purple-color);
+  border-radius: 4px;
+}
+
+.detail_buku {
+  padding: 12px 0;
+}
+
+.card_buku {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card_buku:not(:last-of-type) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.penulis_buku,
+.tahun_buku {
+  font-size: 14px;
+  font-weight: var(--light-font);
+}
+
+.penulis_buku {
+  margin-top: 4px;
+}
+
+.nama_penulis,
+.tahun_terbit {
+  color: var(--purple-color);
+}
+
+.read_button,
+.unread_button,
+.delete_button {
+  font-size: 1.25rem;
+  border: none;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.read_button,
+.unread_button {
+  color: white;
+  background-color: var(--purple-color);
+  margin-right: 6px;
+}
+
+.delete_button {
+  color: var(--purple-color);
+  background-color: white;
+}
+
+@media screen and (max-width: 590px) {
+  body {
+    padding: 0 16px;
+  }
+}
